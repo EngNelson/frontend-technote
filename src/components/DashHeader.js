@@ -1,0 +1,21 @@
+import { Link } from "react-router-dom"
+
+
+
+function DashHeader() {
+  const content = (
+    <header className="dash-header">
+        <div className="dash-header__container">
+            <Link to="/dash/notes">
+                <h1 className="dash-header__title">technote</h1>
+            </Link>
+            <nav className="dash-header__nav">
+                {/* Add Nav Buttons Later  */}
+            </nav>
+        </div>
+    </header>
+  )
+  return content
+}
+
+export default DashHeader
